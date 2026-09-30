@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #bfdbfe;
+        }
+
+        nav {
+            background: #1e3a8a;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #fbbf24;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 18px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+
+        h2 {
+            color: #1d4ed8;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 7px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        a {
+            color: #2563eb;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            background: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #1e40af;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #172554;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Full Name</h1>
+        <p>Student | Aspiring Software Developer</p>
+        <p>Email: yourname@email.com | Phone: +91 XXXXXXXXXX</p>
+        <p>Location: Your City, India</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a motivated student passionate about programming,
+                technology, and software development. I enjoy learning
+                new technologies and building practical projects.
+                I am looking for opportunities to improve my technical
+                skills and gain professional experience.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+
+            <h3>Your Degree / Course</h3>
+            <p>Your College Name</p>
+            <p>Year: 20XX - 20XX</p>
+            <p>CGPA / Percentage: Add your score</p>
+
+            <br>
+
+            <h3>Intermediate / 12th Class</h3>
+            <p>Your College Name | Year of Completion</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span>Python</span>
+                <span>C Programming</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Machine Learning</span>
+                <span>Git & GitHub</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <h3>1. Long Hair Identification</h3>
+            <p>
+                Developed a project exploring image processing
+                and hair-length classification using computer vision.
+            </p>
+
+            <br>
+
+            <h3>2. Senior Citizen Identification</h3>
+            <p>
+                Created a prototype for detecting people in video
+                and recording estimated age information.
+            </p>
+
+            <br>
+
+            <h3>3. Resume Portfolio Website</h3>
+            <p>
+                Built a responsive personal portfolio using
+                HTML and CSS to showcase education, skills,
+                and projects.
+            </p>
+
+            <a class="button" href="https://github.com/"
+               target="_blank" rel="noopener noreferrer">
+                Visit GitHub
+            </a>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Add your programming certification</li>
+                <li>Add your machine learning certification</li>
+                <li>Add your internship certificate, if available</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                Email:
+                <a href="mailto:yourname@email.com">
+                    yourname@email.com
+                </a>
+            </p>
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    My LinkedIn Profile
+                </a>
+            </p>
+            <p>
+                GitHub:
+                <a href="https://github.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    My GitHub Profile
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Full Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
