@@ -1,134 +1,161 @@
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume | Portfolio</title>
+
+    <title>Muthumula Shireesha | Resume</title>
 
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f1f5f9;
-            color: #1e293b;
-            line-height: 1.7;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .resume {
+            width: 850px;
+            max-width: 95%;
+            margin: 30px auto;
+            background: white;
+            padding: 45px 55px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.15);
         }
 
         header {
-            background: #172554;
-            color: white;
             text-align: center;
-            padding: 45px 20px;
+            border-bottom: 2px solid #222;
+            padding-bottom: 18px;
+            margin-bottom: 25px;
         }
 
         header h1 {
-            font-size: 36px;
-            margin-bottom: 8px;
+            font-size: 32px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
         }
 
-        header p {
-            color: #bfdbfe;
+        header h2 {
+            font-size: 17px;
+            font-weight: normal;
+            color: #555;
+            margin-bottom: 12px;
         }
 
-        nav {
-            background: #1e3a8a;
-            padding: 14px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 12px;
+        .contact {
             font-size: 14px;
+            color: #444;
         }
 
-        nav a:hover {
-            color: #fbbf24;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 18px;
+        .contact a {
+            color: #222;
+            text-decoration: none;
         }
 
         section {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px #0000000d;
+            margin-bottom: 23px;
         }
 
-        h2 {
-            color: #1d4ed8;
+        section h3 {
+            font-size: 18px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #999;
+            padding-bottom: 5px;
             margin-bottom: 12px;
-            border-bottom: 2px solid #dbeafe;
-            padding-bottom: 7px;
+        }
+
+        .summary {
+            text-align: justify;
+        }
+
+        .education-item,
+        .project {
+            margin-bottom: 15px;
+        }
+
+        .education-item h4,
+        .project h4 {
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+
+        .education-item p,
+        .project p {
+            font-size: 14px;
         }
 
         ul {
             padding-left: 22px;
+            margin-top: 5px;
         }
 
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skills span {
-            background: #dbeafe;
-            color: #1e40af;
-            padding: 7px 13px;
-            border-radius: 20px;
+        li {
             font-size: 14px;
+            margin-bottom: 3px;
         }
 
-        a {
-            color: #2563eb;
+        .skills p {
+            font-size: 14px;
+            margin-bottom: 5px;
         }
 
-        .button {
+        .skills strong {
             display: inline-block;
-            margin-top: 15px;
-            background: #2563eb;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 6px;
-            text-decoration: none;
+            min-width: 190px;
         }
 
-        .button:hover {
-            background: #1e40af;
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
         }
 
-        footer {
-            text-align: center;
-            padding: 22px;
-            background: #172554;
-            color: white;
+        .certifications li,
+        .achievements li,
+        .soft-skills li {
+            margin-bottom: 4px;
         }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 28px;
+        .footer {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #999;
+            font-size: 13px;
+        }
+
+        @media print {
+            body {
+                background: white;
             }
 
-            nav a {
-                display: inline-block;
-                margin: 5px;
+            .resume {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .resume {
+                padding: 30px 25px;
             }
 
-            section {
-                padding: 18px;
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .skills strong {
+                display: block;
             }
         }
     </style>
@@ -136,131 +163,366 @@
 
 <body>
 
+<div class="resume">
+
+    <!-- HEADER -->
     <header>
-        <h1>Your Full Name</h1>
-        <p>Student | Aspiring Software Developer</p>
-        <p>Email: yourname@email.com | Phone: +91 XXXXXXXXXX</p>
-        <p>Location: Your City, India</p>
+        <h1>MUTHUMULA SHIREESHA</h1>
+
+        <h2>
+            Computer Science & Engineering Student
+        </h2>
+
+        <div class="contact">
+            Hyderabad, Telangana, India |
+            7799521460 |
+            <a href="mailto:shireeeshamuthumula@gmail.com">
+                shireeeshamuthumula@gmail.com
+            </a>
+            <br>
+
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/shireesha-muthumula22245642b/"
+               target="_blank">
+                shireesha-muthumula
+            </a>
+        </div>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
-    <main class="container">
+    <!-- SUMMARY -->
+    <section>
+        <h3>Summary</h3>
 
-        <section id="about">
-            <h2>About Me</h2>
+        <p class="summary">
+            Computer Science and Engineering student with hands-on exposure
+            to Python, Java, Machine Learning, SQL, Flutter, and software
+            development. Developed an academic project on Online Bank Fraud
+            Detection using Machine Learning with a Random Forest classifier
+            and Tkinter-based interface. Interested in applying technical
+            knowledge to real-world problems while continuously developing
+            programming and problem-solving skills.
+        </p>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section>
+        <h3>Education</h3>
+
+        <div class="education-item">
+            <h4>
+                Bachelor of Technology – Computer Science and Engineering – 3rd Year
+            </h4>
+
             <p>
-                I am a motivated student passionate about programming,
-                technology, and software development. I enjoy learning
-                new technologies and building practical projects.
-                I am looking for opportunities to improve my technical
-                skills and gain professional experience.
-            </p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-
-            <h3>Your Degree / Course</h3>
-            <p>Your College Name</p>
-            <p>Year: 20XX - 20XX</p>
-            <p>CGPA / Percentage: Add your score</p>
-
-            <br>
-
-            <h3>Intermediate / 12th Class</h3>
-            <p>Your College Name | Year of Completion</p>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills">
-                <span>Python</span>
-                <span>C Programming</span>
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Machine Learning</span>
-                <span>Git & GitHub</span>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <h3>1. Long Hair Identification</h3>
-            <p>
-                Developed a project exploring image processing
-                and hair-length classification using computer vision.
+                <strong>Malla Reddy College of Engineering</strong>, Telangana
             </p>
 
-            <br>
-
-            <h3>2. Senior Citizen Identification</h3>
             <p>
-                Created a prototype for detecting people in video
-                and recording estimated age information.
+                2024 – 2028 | Current CGPA: 7.9
+            </p>
+        </div>
+
+        <div class="education-item">
+            <h4>Intermediate</h4>
+
+            <p>
+                <strong>Sri Chaitanya Junior Kalashala</strong>, Telangana
             </p>
 
-            <br>
-
-            <h3>3. Resume Portfolio Website</h3>
             <p>
-                Built a responsive personal portfolio using
-                HTML and CSS to showcase education, skills,
-                and projects.
+                2024 | Percentage: 88%
+            </p>
+        </div>
+
+        <div class="education-item">
+            <h4>Secondary School Certificate (SSC)</h4>
+
+            <p>
+                <strong>Ishanvi High School</strong>, Telangana
             </p>
 
-            <a class="button" href="https://github.com/"
-               target="_blank" rel="noopener noreferrer">
-                Visit GitHub
-            </a>
-        </section>
+            <p>
+                2022 | Percentage: 92%
+            </p>
+        </div>
+    </section>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
+
+    <!-- PROJECTS -->
+    <section>
+        <h3>Projects</h3>
+
+        <div class="project">
+
+            <h4>
+                1. Online Bank Fraud Detection Using Machine Learning
+            </h4>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, Machine Learning, Random Forest, Tkinter
+            </p>
+
             <ul>
-                <li>Add your programming certification</li>
-                <li>Add your machine learning certification</li>
-                <li>Add your internship certificate, if available</li>
+                <li>
+                    Developed a machine-learning application to identify
+                    potentially fraudulent banking transactions.
+                </li>
+
+                <li>
+                    Implemented a Random Forest Classifier for transaction
+                    classification.
+                </li>
+
+                <li>
+                    Used train_test_split for training and testing the
+                    machine-learning model.
+                </li>
+
+                <li>
+                    Evaluated model performance using accuracy score and
+                    classification report.
+                </li>
+
+                <li>
+                    Built a user-friendly Tkinter GUI for interacting with
+                    the fraud detection system.
+                </li>
             </ul>
+
+        </div>
+
+
+        <div class="project">
+
+            <h4>
+                2. Age and Gender Detection
+                <span style="font-weight: normal;">(Ongoing)</span>
+            </h4>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, Computer Vision, Machine Learning, OpenCV
+            </p>
+
+            <ul>
+                <li>
+                    Currently developing an application for detecting a
+                    person's age and gender from facial images.
+                </li>
+
+                <li>
+                    Working with image-processing and computer-vision
+                    techniques for facial analysis.
+                </li>
+
+                <li>
+                    Implementing machine-learning approaches for age and
+                    gender classification.
+                </li>
+
+                <li>
+                    Designing the project with a focus on practical and
+                    real-time image analysis.
+                </li>
+
+                <li>
+                    Exploring model performance and accuracy to improve
+                    prediction results.
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="skills">
+
+        <h3>Technical Skills</h3>
+
+        <p>
+            <strong>Programming Languages:</strong>
+            Python, Java
+        </p>
+
+        <p>
+            <strong>Machine Learning:</strong>
+            Random Forest, Classification, Model Evaluation
+        </p>
+
+        <p>
+            <strong>Database:</strong>
+            SQL, DBMS
+        </p>
+
+        <p>
+            <strong>Application Development:</strong>
+            Python Tkinter, Flutter
+        </p>
+
+        <p>
+            <strong>Flutter:</strong>
+            SetState, Provider
+        </p>
+
+        <p>
+            <strong>Core CS:</strong>
+            Data Structures & Algorithms, Operating Systems,
+            Computer Networks, Software Engineering
+        </p>
+
+        <p>
+            <strong>DevOps:</strong>
+            Scrum, Kanban, Source Code Management, Database Migration
+        </p>
+
+        <p>
+            <strong>Tools:</strong>
+            Git, GitHub, VS Code
+        </p>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS & WORKSHOPS -->
+    <section>
+
+        <h3>Certifications & Workshops</h3>
+
+        <ul class="certifications">
+
+            <li>
+                Microsoft Technical Workshop
+            </li>
+
+            <li>
+                Getting Started with Artificial Intelligence –
+                IBM Online Platform – 2026
+            </li>
+
+            <li>
+                Getting Started with Generative AI –
+                IBM Online Platform – 2026
+            </li>
+
+            <li>
+                Age Gender Detection Training Certificate –
+                Elevance Skills Platform – 2026
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS + SOFT SKILLS -->
+    <div class="two-column">
+
+        <section>
+
+            <h3>Achievements & Activities</h3>
+
+            <ul class="achievements">
+
+                <li>
+                    Participated in technical paper presentation.
+                </li>
+
+                <li>
+                    Participated in technical workshops and received
+                    certifications.
+                </li>
+
+                <li>
+                    Developed machine-learning projects addressing
+                    real-world problems.
+                </li>
+
+                <li>
+                    Currently working on an Age and Gender Detection project.
+                </li>
+
+                <li>
+                    Continuously developing programming, machine-learning,
+                    and problem-solving skills.
+                </li>
+
+            </ul>
+
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>
-                Email:
-                <a href="mailto:yourname@email.com">
-                    yourname@email.com
-                </a>
-            </p>
-            <p>
-                LinkedIn:
-                <a href="https://www.linkedin.com/"
-                   target="_blank" rel="noopener noreferrer">
-                    My LinkedIn Profile
-                </a>
-            </p>
-            <p>
-                GitHub:
-                <a href="https://github.com/"
-                   target="_blank" rel="noopener noreferrer">
-                    My GitHub Profile
-                </a>
-            </p>
+
+        <section>
+
+            <h3>Soft Skills</h3>
+
+            <ul class="soft-skills">
+
+                <li>Problem Solving</li>
+                <li>Quick Learning</li>
+                <li>Team Collaboration</li>
+                <li>Communication</li>
+                <li>Creativity</li>
+                <li>Adaptability</li>
+
+            </ul>
+
         </section>
 
-    </main>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Your Full Name. All rights reserved.</p>
-    </footer>
+
+    <!-- PERSONAL DETAILS -->
+    <section>
+
+        <h3>Personal Details</h3>
+
+        <p>
+            <strong>Location:</strong>
+            Hyderabad, Telangana, India
+        </p>
+
+        <p>
+            <strong>Languages:</strong>
+            Telugu, English, Hindi
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        <strong>Declaration:</strong>
+
+        <p>
+            I hereby declare that the information provided above is true
+            and correct to the best of my knowledge.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Place:</strong> Hyderabad
+        </p>
+
+        <p>
+            <strong>Date:</strong> 19-09-2026
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Muthumula Shireesha</strong>
+        </p>
+
+    </div>
+
+</div>
 
 </body>
 </html>
+```
